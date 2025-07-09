@@ -1,4 +1,3 @@
-// src/pages/AdminDashboard.jsx
 import { useEffect, useState } from 'react';
 import API from '../api';
 import {

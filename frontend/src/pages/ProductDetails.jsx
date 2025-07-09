@@ -59,7 +59,6 @@ const ProductDetails = () => {
         <CardContent>
           <Typography variant="h4">{product.name}</Typography>
 
-          {/* Description as bullet points if it's an array */}
           {Array.isArray(product.description) ? (
             product.description.map((line, idx) => (
               <Typography key={idx} sx={{ mt: 1 }}>

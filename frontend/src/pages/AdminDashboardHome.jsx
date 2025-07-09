@@ -1,4 +1,3 @@
-// ✅ AdminDashboardHome.jsx (Landing page for Admin Panel)
 import { Container, Typography, Grid, Card, CardContent, Button } from '@mui/material';
 import { useNavigate } from 'react-router-dom';
 import InventoryIcon from '@mui/icons-material/Inventory';

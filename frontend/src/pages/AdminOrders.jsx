@@ -35,7 +35,7 @@ const AdminOrders = () => {
   const markDelivered = async (orderId) => {
     try {
       await API.put(`/admin/orders/${orderId}/deliver`);
-      fetchOrders(); // refresh after update
+      fetchOrders();
     } catch (err) {
       console.error('Error marking as delivered:', err);
     }

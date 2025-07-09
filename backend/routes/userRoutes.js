@@ -13,8 +13,8 @@ const router = express.Router();
 router.post('/register', registerUser);
 router.post('/login', loginUser);
 router.get('/profile', getProfile);
-router.get('/', getAllUsers); // get all users
-router.put('/:id/admin', toggleAdminRole); // toggle admin
-router.delete('/:id', deleteUserById); // delete user
+router.get('/', getAllUsers);
+router.put('/:id/admin', toggleAdminRole);
+router.delete('/:id', deleteUserById);
 
 export default router;

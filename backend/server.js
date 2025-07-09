@@ -14,12 +14,12 @@ connectDB();
 const app = express();
 
 app.use(cors());
-app.use(express.json()); // JSON parser needed BEFORE routes
+app.use(express.json());
 
 app.use('/api/users', userRoutes);
 app.use('/api/products', productRoutes);
 app.use('/api/orders', orderRoutes);
-app.use('/api/admin', adminRoutes); // ✅ move this below
+app.use('/api/admin', adminRoutes);
 
 app.get('/', (req, res) => {
   res.send('ShopZilla API is running...');

@@ -5,13 +5,11 @@ import User from '../models/User.js';
 
 const router = express.Router();
 
-// ✅ GET all products
 router.get('/products', async (req, res) => {
   const products = await Product.find({});
   res.json(products);
 });
 
-// ✅ CRUD for products
 router.post('/products', async (req, res) => {
   const product = new Product(req.body);
   const created = await product.save();
@@ -28,12 +26,10 @@ router.delete('/products/:id', async (req, res) => {
   res.json({ message: 'Deleted' });
 });
 
-// ✅ GET all orders with user details
 router.get('/orders', async (req, res) => {
   const orders = await Order.find({}).populate('user', 'name email');
   res.json(orders);
 });
-// PUT: Mark order as delivered
 router.put('/orders/:id/deliver', async (req, res) => {
   const order = await Order.findById(req.params.id);
   if (!order) return res.status(404).json({ message: 'Order not found' });
@@ -44,7 +40,6 @@ router.put('/orders/:id/deliver', async (req, res) => {
   res.json(updated);
 });
 
-// DELETE: Delete order
 router.delete('/orders/:id', async (req, res) => {
   const deleted = await Order.findByIdAndDelete(req.params.id);
   if (!deleted) return res.status(404).json({ message: 'Order not found' });
@@ -52,13 +47,11 @@ router.delete('/orders/:id', async (req, res) => {
 });
 
 
-// ✅ GET all users
 router.get('/users', async (req, res) => {
   const users = await User.find({});
   res.json(users);
 });
 
-// ✅ TOGGLE admin status
 router.put('/users/:id/admin', async (req, res) => {
   const user = await User.findById(req.params.id);
   if (!user) return res.status(404).json({ message: 'User not found' });
@@ -69,7 +62,6 @@ router.put('/users/:id/admin', async (req, res) => {
   res.json({ message: `User ${user.isAdmin ? 'granted' : 'revoked'} admin access.` });
 });
 
-// ✅ DELETE user
 router.delete('/users/:id', async (req, res) => {
   const user = await User.findById(req.params.id);
   if (!user) return res.status(404).json({ message: 'User not found' });

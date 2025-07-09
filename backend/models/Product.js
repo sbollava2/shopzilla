@@ -1,9 +1,8 @@
-// models/Product.js
 import mongoose from 'mongoose';
 
 const variantSchema = new mongoose.Schema({
-  type: String, // e.g. "Size"
-  options: [String], // e.g. ["S", "M", "L"]
+  type: String,
+  options: [String],
 });
 
 const productSchema = new mongoose.Schema({
@@ -11,7 +10,7 @@ const productSchema = new mongoose.Schema({
   description: { type: [String], default: [] },
   price: { type: Number, required: true },
   countInStock: { type: Number, required: true },
-  discount: { type: Number, default: 0 }, // percent
+  discount: { type: Number, default: 0 },
   shippingCost: { type: Number, default: 0 },
   image: { type: [String], default: [] },
   variants: { type: [variantSchema], default: [] },

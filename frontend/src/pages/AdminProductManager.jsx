@@ -60,7 +60,7 @@ const AdminProductManager = () => {
 
     const payload = {
       ...newProduct,
-      image: newProduct.image.trim(),
+      image: [newProduct.image.trim()],
       description: newProduct.description.split(',').map(d => d.trim()),
       price: Number(newProduct.price),
       countInStock: Number(newProduct.countInStock),
@@ -90,7 +90,7 @@ const AdminProductManager = () => {
     setEditId(product._id);
     setNewProduct({
       ...product,
-      image: product.image || '',
+      image: Array.isArray(product.image) ? product.image[0] || '' : product.image,
       description: Array.isArray(product.description)
         ? product.description.join(', ')
         : product.description,
@@ -175,7 +175,7 @@ const AdminProductManager = () => {
               <TableCell>
                 <Avatar
                   variant="rounded"
-                  src={product.image}
+                  src={Array.isArray(product.image) ? product.image[0] : product.image}
                   alt={product.name}
                   sx={{ width: 56, height: 56 }}
                 />

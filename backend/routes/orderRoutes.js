@@ -1,11 +1,9 @@
-// backend/routes/orderRoutes.js
 import express from 'express';
 import mongoose from 'mongoose';
 import Order from '../models/Order.js';
 
 const router = express.Router();
 
-// POST: Place a new order
 router.post('/', async (req, res) => {
   try {
     const { items, totalAmount, userId } = req.body;
@@ -20,7 +18,6 @@ router.post('/', async (req, res) => {
       return res.status(400).json({ message: 'Invalid or missing user ID' });
     }
 
-    // ✅ Fix: Convert image arrays to strings
     const formattedItems = items.map((item) => ({
       _id: item._id,
       name: item.name,
@@ -46,7 +43,6 @@ router.post('/', async (req, res) => {
   }
 });
 
-// GET: Order details
 router.get('/details/:id', async (req, res) => {
   try {
     const order = await Order.findById(req.params.id);
@@ -57,7 +53,6 @@ router.get('/details/:id', async (req, res) => {
   }
 });
 
-// GET: Orders by user
 router.get('/:userId', async (req, res) => {
   try {
     const orders = await Order.find({ user: req.params.userId });

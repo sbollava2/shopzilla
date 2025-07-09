@@ -21,7 +21,6 @@ const Login = () => {
   try {
     const res = await API.post('/users/login', { email, password });
 
-    // Check if valid user object
     if (res.data?.user && res.data?.token) {
       localStorage.setItem('user', JSON.stringify(res.data.user));
       localStorage.setItem('token', res.data.token);
