@@ -1,4 +1,5 @@
 ShopZilla – MERN Stack E-Commerce Web App
+
 ShopZilla is a full-featured e-commerce web application built using the MERN stack (MongoDB, Express, React, Node.js).
 The platform allows users to browse products, add them to a cart, and place orders. 
 Admin users can manage products, including adding, editing, and deleting items through a secure dashboard.
