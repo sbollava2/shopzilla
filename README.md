@@ -6,23 +6,23 @@ Admin users can manage products, including adding, editing, and deleting items t
 
 Features:
 👤 User Functionality
-🔐 User login & signup with secure authentication
-🛒 Add products to cart
-✅ Place orders and view order history
-🖼️ Browse all products with image previews and descriptions
-🛠️ Admin Functionality
-📦 Add, edit, and delete products
-📋 View all products in a table
-🖼️ Image preview while uploading
-🧮 Manage stock, price, discount, shipping fee, and variants (color/size)
+🔐 User login & signup with secure authentication,
+🛒 Add products to cart,
+✅ Place orders and view order history,
+🖼️ Browse all products with image previews and descriptions,
+🛠️ Admin Functionality,
+📦 Add, edit, and delete products,
+📋 View all products in a table,
+🖼️ Image preview while uploading,
+🧮 Manage stock, price, discount, shipping fee, and variants (color/size).
 
 Tech Stack
-Frontend: React + Material UI (MUI)
-Backend: Node.js + Express
-Database: MongoDB (via Mongoose)
-Authentication: Local storage based
-API Testing: Postman
-Version Control: Git + GitHub
+Frontend: React + Material UI (MUI),
+Backend: Node.js + Express,
+Database: MongoDB (via Mongoose),
+Authentication: Local storage based,
+API Testing: Postman,
+Version Control: Git + GitHub,
 
 installed dependencies :
 frontend:
