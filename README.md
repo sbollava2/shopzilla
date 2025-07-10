@@ -6,48 +6,49 @@ The platform allows users to browse products, add them to a cart, and place orde
 
 Admin users can manage products, including adding, editing, and deleting items through a secure dashboard.
 
-Features:
-👤 User Functionality
+🌟 Features:
 
-🔐 User login & signup with secure authentication,
+  👤 User Functionality
 
-🛒 Add products to cart,
+  🔐 User login & signup with secure authentication,
 
-✅ Place orders and view order history,
+  🛒 Add products to cart,
 
-🖼️ Browse all products with image previews and descriptions,
+  ✅ Place orders and view order history,
 
-🛠️ Admin Functionality,
+  🖼️ Browse all products with image previews and descriptions,
 
-📦 Add, edit, and delete products,
+🛠️ Admin Functionality:
 
-📋 View all products in a table,
+  📦 Add, edit, and delete products,
 
-🖼️ Image preview while uploading,
+  📋 View all products in a table,
 
-🧮 Manage stock, price, discount, shipping fee, and variants (color/size).
+  🖼️ Image preview while uploading,
 
-Tech Stack
+  🧮 Manage stock, price, discount, shipping fee, and variants (color/size).
 
-Frontend: React + Material UI (MUI),
+Tech Stack:
 
-Backend: Node.js + Express,
+  Frontend: React + Material UI (MUI),
 
-Database: MongoDB (via Mongoose),
+  Backend: Node.js + Express,
 
-Authentication: Local storage based,
+  Database: MongoDB (via Mongoose),
 
-API Testing: Postman,
+  Authentication: Local storage based,
 
-Version Control: Git + GitHub,
+  API Testing: Postman,
+
+  Version Control: Git + GitHub,
 
 installed dependencies :
 
-frontend:
+  frontend:
 
-npm install react react-dom react-router-dom axios @mui/material @mui/icons-material @emotion/react @emotion/styled
+    npm install react react-dom react-router-dom axios @mui/material @mui/icons-material @emotion/react @emotion/styled
 
-backend:
+  backend:
 
-npm install -D vite @vitejs/plugin-react eslint @eslint/js eslint-plugin-react-hooks eslint-plugin-react-refresh globals @types/react @types/react-dom
+    npm install -D vite @vitejs/plugin-react eslint @eslint/js eslint-plugin-react-hooks eslint-plugin-react-refresh globals @types/react @types/react-dom
 
