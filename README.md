@@ -8,25 +8,25 @@ Admin users can manage products, including adding, editing, and deleting items t
 
 🌟 Features:
 
-  👤 User Functionality
+  👤 User Functionality:
 
-  🔐 User login & signup with secure authentication,
+    🔐 User login & signup with secure authentication,
 
-  🛒 Add products to cart,
+    🛒 Add products to cart,
 
-  ✅ Place orders and view order history,
+    ✅ Place orders and view order history,
 
-  🖼️ Browse all products with image previews and descriptions,
+    🖼️ Browse all products with image previews and descriptions,
 
-🛠️ Admin Functionality:
+  🛠️ Admin Functionality:
 
-  📦 Add, edit, and delete products,
+    📦 Add, edit, and delete products,
 
-  📋 View all products in a table,
+    📋 View all products in a table,
 
-  🖼️ Image preview while uploading,
+    🖼️ Image preview while uploading,
 
-  🧮 Manage stock, price, discount, shipping fee, and variants (color/size).
+    🧮 Manage stock, price, discount, shipping fee, and variants (color/size).
 
 Tech Stack:
 
