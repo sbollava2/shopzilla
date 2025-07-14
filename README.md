@@ -108,38 +108,39 @@ AdminPanel Dashboard:
 
 Product management page:
 
-    ->Add new products by filling in details such as name, image URL, price, stock, category, color, and size
+    Add new products by filling in details such as name, image URL, price, stock, category, color, and size
 
-    ->Preview the product image live before uploading
+    Preview the product image live before uploading
 
-    ->Edit existing products — the form auto-fills with the selected product’s data
+    Edit existing products — the form auto-fills with the selected product’s data
 
-    ->Veiw all the product in the store.
+    Veiw all the product in the store.
 
-    ->Admins can also delete products with a single click.
+    Admins can also delete products with a single click.
 
-    ->All product operations are fully integrated with the backend and MongoDB database.
+    All product operations are fully integrated with the backend and MongoDB database.
 
 <img width="960" height="540" alt="product management" src="https://github.com/user-attachments/assets/7b5c7caf-35e3-47de-9802-c8098a17bcc9" />
 
 Order Management Page:
 
-    ->Admins can view all orders placed by users.
+    Admins can view all orders placed by users.
 
-    ->Each order includes actions to:
+    Each order includes actions to:
 
-          Update the delivery status — changing it from NO to the delivered date
+         Update the delivery status — changing it from NO to the delivered date
       
-          Delete the order from the database
+         Delete the order from the database
 
   <img width="960" height="540" alt="Order manage" src="https://github.com/user-attachments/assets/e9373ca9-ba93-4409-9542-ada7e58b5bae" />
 
 Users Management page:
 
-    ->View all registered users
+    View all registered users
 
-    ->Grant or revoke administrative access
-    ->Delete any user from the database"
+    Grant or revoke administrative access
+    
+    Delete any user from the database"
 
   <img width="960" height="540" alt="Users" src="https://github.com/user-attachments/assets/cf4d022d-bef3-4c14-a946-e947ca819fe1" />
 
