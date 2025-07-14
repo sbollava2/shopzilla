@@ -52,3 +52,6 @@ installed dependencies :
 
     npm install -D vite @vitejs/plugin-react eslint @eslint/js eslint-plugin-react-hooks eslint-plugin-react-refresh globals @types/react @types/react-dom
 
+Images:
+
+<img width="960" height="540" alt="Checkout" src="https://github.com/user-attachments/assets/3eef53f1-9ea7-49f9-a79e-c315b94e547f" />
